@@ -1,4 +1,8 @@
 /* IMPOSTAZIONI GENERALI */
+:root {
+  --social--height: 60px;
+  --calendar--height: 10px;
+}
 
 body {
   font-family: Poppins, "Helvetica Neue", sans-serif;
@@ -425,7 +429,7 @@ footer a {
 
 #backTop {
   background-color: rgba(255, 255, 255, 0.426);
-  display: inline-block;
+  display: none;
   cursor: pointer;
   padding: 5px;
   border: 2px solid white;
@@ -472,11 +476,11 @@ footer a {
 @media screen and (max-width: 699px) {
   #calendar {
     top: initial;
-    bottom: 60px;
+    bottom: var(--calendar--height);
   }
   #social {
     top: initial;
-    bottom: 115px;
+    bottom: var(--social--height);
   }
 }
 aside > div {
